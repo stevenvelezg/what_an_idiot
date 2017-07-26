@@ -24,21 +24,24 @@ h5 {
 }
 footer {
 	min-height: 3vh;
-	text-align: right;
-	position: fixed;
-	/*.footertext {*/
-		/*padding-right: 50px;*/
-	/*}*/
+    text-align: right;
+    border-top: 2px black solid;
+    float: right;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
-footer {
-	min-height: 3vh;
-  text-align: right;
-    /*border-bottom: 2px black solid;*/
-}
-footertext {
+.bottom.nav {
 		margin-left: : 50px;
 }
-
+ul {
+	list-style: none;
+	display: inline-block;
+}
+li {
+	font-size: 10px;
+	display: inline-block;
+}
 .signin {
   float: left;
   border: 2px solid black;
@@ -53,46 +56,6 @@ footertext {
   width: 40%;
   text-align: center;
 }
-/*
-.burger {
-	position: fixed;
-	top: 25px;
-	right: 75px;
-	text-align: center;
-	z-index: 1;
-}
-
-.burger_line {
-	margin-left: 25px;
-	margin-top: 5px;
-	height: 5px;
-	width: 40px;
-	background-color: black;
-}
-
-.burger_menu {
-	position: absolute;
-	top: -100px;
-}
-
-.burger_menu ul {
-	display: none;
-	width: 90px;
-	margin-top: 15px;
-	padding: 0;
-	list-style: none;
-	text-align: center;
-	font-size: 15px;
-	background-color: rgb(169, 169, 169);
-}
-
-.burger_menu ul li {
-	padding-top: 15px;
-}
-
-#last_item {
-	padding-bottom: 10px;
-}*/
 .hamburger{
   background:none;
   position:absolute;
