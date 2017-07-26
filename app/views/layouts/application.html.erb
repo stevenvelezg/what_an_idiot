@@ -11,14 +11,31 @@
   <body>
     <h1>What An Idiot</h1>
       <h5>...There are bigger idiots out there than you.</h5>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="navbar-header">
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+      <header class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+          <div class="container">
+            <div class="navbar-header">
+            </div>
           </div>
         </div>
+      </header>
+
+      <div class="menu">
+        <ul>
+          <a href="<%= root_path %>"><li>HOME</li></a>
+          <a href="<%= articles_path %>"><li>ARTICLES</li></a>
+          <a href="<%= about_us_path %>"><li>ABOUT US</li></a>
+          <% if current_user %>
+            <%= link_to destroy_user_session_path, method: :delete do %>
+              <li>LOGOUT</li>
+            <% end %>
+          <% else %>
+            <a href="<%= sign_in_path %>"><li>SIGN IN</li></a>
+          <% end %>
+        </ul>
       </div>
-    </header>
   <div class="abovenav">
   </div>
     <% if notice %>
