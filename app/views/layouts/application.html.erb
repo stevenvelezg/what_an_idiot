@@ -9,6 +9,8 @@
   </head>
 
   <body>
+    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+
   <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
   <% end %>
