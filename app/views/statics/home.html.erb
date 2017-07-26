@@ -1,2 +1,12 @@
-<h1>Statics#home</h1>
-<p>Find me in app/views/statics/home.html.erb</p>
+<h1>Home</h1>
+<% @posts.each do |post| %>
+  <div class="article">
+    <div class="text">
+      <h2><%= post.title %></h2> <br />
+      <h4><%= post.body %></h4>
+    </div>
+    <div class="bar">
+      <div class="percent" style="right: <% if post.percentage == nil || post.percentage == 0%><%= 200 %><%else%><%= post.percentage * 200 %><%end%>px ;"></div>
+    </div>
+  </div>
+<% end %>
