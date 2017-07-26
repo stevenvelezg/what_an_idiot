@@ -8,9 +8,11 @@
       <h2><%= post.title %></h2> <br />
       <h4><%= post.body %></h4>
     </div>
-    <div class="bar">
-      <div class="percent" style="right: <% if post.percentage == nil || post.percentage == 0%><%= 200 %><%else%><%= post.percentage * 200 %><%end%>px ;"></div>
+    <span><%= link_to downvote_path(post), method: :patch, remote: true, class: "vote-change" do%><img src="/assets/downvote.png" style="width: 50px;"><% end %></span>
+    <div id="bar_<%= post.id %>" class="bar">
+      <div class="percent" style="width: <% if post.percentage == nil || post.percentage == 0%><%= 0 %><%else%><%= post.percentage * 100 %><%end%>% ;"></div>
     </div>
+    <span><%= link_to upvote_path(post), method: :patch, remote: true, class: "vote-change" do%><img src="/assets/upvote.png" style="width: 50px;"><% end %></span>
   </div>
 <% end %>
 <br>
