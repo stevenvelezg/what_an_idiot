@@ -1,4 +1,4 @@
-<% @posts.each do |post| %>
+<% @posts.last(5).each do |post| %>
   <div class="article">
     <div class="text">
       <h2><%= post.title %></h2> <br />
