@@ -2,6 +2,7 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< HEAD
 
 /*this thread will be for the general layout of the page*/
 body {
@@ -38,4 +39,19 @@ footer {
 }
 footertext {
 		margin-left: : 50px;
+=======
+.signin {
+  float: left;
+  border: 2px solid black;
+  margin-right: 20px;
+  width: 40%;
+  text-align: center;
+}
+
+.signup {
+  float: left;
+  border: 2px solid black;
+  width: 40%;
+  text-align: center;
+>>>>>>> 5f50fe71e2ccf7eb5c17d60db4d9af0702900c1e
 }
