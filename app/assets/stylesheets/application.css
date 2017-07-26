@@ -2,8 +2,6 @@
  *= require_tree .
  *= require_self
  */
-<<<<<<< HEAD
-
 /*this thread will be for the general layout of the page*/
 body {
 	background-color: lightgrey;
@@ -34,12 +32,13 @@ footer {
 }
 footer {
 	min-height: 3vh;
-    text-align: right;
+  text-align: right;
     /*border-bottom: 2px black solid;*/
 }
 footertext {
 		margin-left: : 50px;
-=======
+}
+
 .signin {
   float: left;
   border: 2px solid black;
@@ -53,5 +52,100 @@ footertext {
   border: 2px solid black;
   width: 40%;
   text-align: center;
->>>>>>> 5f50fe71e2ccf7eb5c17d60db4d9af0702900c1e
+}
+/*
+.burger {
+	position: fixed;
+	top: 25px;
+	right: 75px;
+	text-align: center;
+	z-index: 1;
+}
+
+.burger_line {
+	margin-left: 25px;
+	margin-top: 5px;
+	height: 5px;
+	width: 40px;
+	background-color: black;
+}
+
+.burger_menu {
+	position: absolute;
+	top: -100px;
+}
+
+.burger_menu ul {
+	display: none;
+	width: 90px;
+	margin-top: 15px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	font-size: 15px;
+	background-color: rgb(169, 169, 169);
+}
+
+.burger_menu ul li {
+	padding-top: 15px;
+}
+
+#last_item {
+	padding-bottom: 10px;
+}*/
+.hamburger{
+  background:none;
+  position:absolute;
+  top: 10px;
+  right: 30px;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color: black;
+  border:0;
+  font-size:30px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:1;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:10px;
+  right: 34px;
+  padding:7px 15px 0px 15px;
+  color: black;
+  border:0;
+  font-size:70px;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:1;
+}
+.menu{
+	z-index:1;
+	font-weight:bold;
+	font-size:0.8em;
+	width:100%;
+	background:#f1f1f1;
+	position:absolute;
+	text-align:center;
+	font-size:12px;
+}
+.menu ul {margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+.menu li {display: block;
+  padding:15px 0 15px 0;
+	border-bottom:#dddddd 1px solid;
+}
+.menu ul li a { text-decoration:none;
+  margin: 0px;
+	color:#666;
+}
+.menu a{text-decoration:none;
+	color:#666;
 }

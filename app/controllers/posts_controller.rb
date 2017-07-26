@@ -64,8 +64,8 @@ class PostsController < ApplicationController
   def upvote
     #try to get previous vote first
     # replace 1 with current_user.id
-    @vote = Vote.find_by(user_id: 1, post_id: @post.id)
-    @vote = Vote.new(user_id: 1, post_id: @post.id) unless @vote
+    @vote = Vote.find_by(user_id: current_user.id, post_id: @post.id)
+    @vote = Vote.new(user_id: current_user.id, post_id: @post.id) unless @vote
     @vote.vote = 1
     @vote.save
     respond_to do |format|
@@ -74,8 +74,8 @@ class PostsController < ApplicationController
   end
 
   def downvote
-    @vote = Vote.find_by(user_id: 1, post_id: @post.id)
-    @vote = Vote.new(user_id: 1, post_id: @post.id) unless @vote
+    @vote = Vote.find_by(user_id: current_user.id, post_id: @post.id)
+    @vote = Vote.new(user_id: current_user.id, post_id: @post.id) unless @vote
     @vote.vote = 0
     @vote.save
     respond_to do |format|

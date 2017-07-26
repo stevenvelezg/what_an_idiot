@@ -5,7 +5,9 @@
       <h4><%= post.body %></h4>
     </div>
     <div class="bar">
-      <div class="percent" style="right: <% if post.percentage == nil || post.percentage == 0%><%= 200 %><%else%><%= post.percentage * 200 %><%end%>px ;"></div>
+      <div id="bar_<%= post.id %>" class="bar">
+        <div class="percent" style="width: <% if post.percentage == nil || post.percentage == 0%><%= 0 %><%else%><%= post.percentage * 100 %><%end%>% ;"></div>
+      </div>
     </div>
   </div>
 <% end %>
