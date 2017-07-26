@@ -8,22 +8,34 @@ body {
 	background-color: lightgrey;
     margin: 0;
 	line-height: 18px;
+	/*border-bottom: 2px black solid;*/
+}
+header {
 	border-bottom: 2px black solid;
+	margin-top: 15px;
+
 }
 h1 {
-	padding-left: 50px;
+	padding-left: 40px;
+	margin-top: 20px;
 }
 h5 {
 	padding-left: 40px;
+	margin-top: auto;
 }
 footer {
 	min-height: 3vh;
 	text-align: right;
 	position: fixed;
-	./*footertext {
-		padding-right: 50px;
-	}*/
+	/*.footertext {*/
+		/*padding-right: 50px;*/
+	/*}*/
+}
+footer {
+	min-height: 3vh;
+    text-align: right;
+    /*border-bottom: 2px black solid;*/
 }
 footertext {
-		padding-right: 50px;
+		margin-left: : 50px;
 }
