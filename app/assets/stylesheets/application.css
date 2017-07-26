@@ -2,7 +2,6 @@
  *= require_tree .
  *= require_self
  */
-<<<<<<< HEAD
 
 /*this thread will be for the general layout of the page*/
 body {
@@ -26,20 +25,24 @@ h5 {
 }
 footer {
 	min-height: 3vh;
-	text-align: right;
-	position: fixed;
-	/*.footertext {*/
-		/*padding-right: 50px;*/
-	/*}*/
-}
-footer {
-	min-height: 3vh;
     text-align: right;
-    /*border-bottom: 2px black solid;*/
+    border-top: 2px black solid;
+    float: right;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
-footertext {
+.bottom.nav {
 		margin-left: : 50px;
-=======
+}
+ul {
+	list-style: none;
+	display: inline-block;
+}
+li {
+	font-size: 10px;
+	display: inline-block;
+}
 .signin {
   float: left;
   border: 2px solid black;
@@ -53,5 +56,4 @@ footertext {
   border: 2px solid black;
   width: 40%;
   text-align: center;
->>>>>>> 5f50fe71e2ccf7eb5c17d60db4d9af0702900c1e
 }
