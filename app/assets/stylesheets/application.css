@@ -23,6 +23,7 @@ h5 {
 	margin-top: auto;
 }
 footer {
+	background-color: lightgrey;
 	min-height: 3vh;
     text-align: right;
     border-top: 2px black solid;
@@ -44,16 +45,21 @@ li {
 	display: inline-block;
 }
 .signin {
+	margin-top: 20px;
   float: left;
-  border: 2px solid black;
-  margin-right: 20px;
-  width: 40%;
+  border-right: 2px solid black;
+  margin-left: 100px;
+  width: 43%;
   text-align: center;
+}
+.label_tag {
+	display: inline-block;
 }
 
 .signup {
-  float: left;
-  border: 2px solid black;
+	margin-top: 20px;
+	margin-right: 100px;
+  float: right;
   width: 40%;
   text-align: center;
 }
