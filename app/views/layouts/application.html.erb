@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>IdiotSite</title>
+    <title>What An Idiot</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,14 +9,36 @@
   </head>
 
   <body>
-    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-
-  <% if notice %>
-    <p class="alert alert-success"><%= notice %></p>
-  <% end %>
-  <% if alert %>
-    <p class="alert alert-danger"><%= alert %></p>
-  <% end %>
-    <%= yield %>
+    <h1>What An Idiot</h1>
+      <h5>...There are bigger idiots out there than you.</h5>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="navbar-header">
+          </div>
+        </div>
+      </div>
+    </header>
+  <div class="abovenav">
+  </div>
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+      <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+      <%= yield %>
+        <footer class="footer navbar-fixed-bottom">
+          <div class="container">
+            <nav>
+              <ul>
+                <li><%= link_to "Home", root_path%></li>
+                <li><%= link_to "Articles", articles_path%></li>
+                <li><%= link_to "About Us", about_us_path%></li>
+                <li><%= link_to "Sign In", sign_in_path%></li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
   </body>
 </html>
