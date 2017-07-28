@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="post">Posts</h1>
+<h1 class="articles">Articles</h1>
 
 <% @posts.each do |post| %>
   <div class="article">
     <div class="text">
-      <a href="<%= post.article_link %>"><h2><%= post.title %></h2></a> <br />
-      <h4><%= post.body %></h4>
+      <a href="<%= post.article_link %>"><h2 class="articles link"><%= post.title %></h2></a> <br />
+      <h4 class="article body"><%= post.body %></h4>
     </div>
     <span><%= link_to downvote_path(post), method: :patch, remote: true, class: "vote-change" do%><img src="/assets/downvote.png" style="width: 50px;"><% end %></span>
     <div id="bar_<%= post.id %>" class="bar">
