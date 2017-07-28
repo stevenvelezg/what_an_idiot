@@ -9,5 +9,6 @@ Post.create([{title: 'Great Life Choices: Robbing a bank, stripping, and then th
 User.create([{email: 'test@email.com', password: '12345678'},
               {email: 'test2@email.com', password: '12345678'},
               {email: 'steven.velez711@gmail.com', password: 'svelezg', admin: true}])
+			  {email: 'james@hello.com', password: '123456', admin: true}
 Vote.create([{post_id: 1, user_id: 1, vote: 1},
               {post_id: 1, user_id: 1, vote: 0}])
