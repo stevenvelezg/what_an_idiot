@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
+  before_action :admin_check, except: [:index]
 
   # GET /posts
   # GET /posts.json
@@ -92,5 +93,13 @@ class PostsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
       params.require(:post).permit(:title, :body, :article_link)
+    end
+
+    def admin_check
+      if current_user && current_user.admin == true
+
+      else
+        redirect_to root_path
+      end
     end
 end
