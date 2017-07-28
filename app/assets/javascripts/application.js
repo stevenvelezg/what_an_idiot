@@ -15,6 +15,10 @@
 //= require turbolinks
 //= require_tree .
 
+function hideModal() {
+  document.getElementById('notice-modal').style = 'display: none;'
+}
+
 document.addEventListener("turbolinks:load",function(){
 
   $( ".cross" ).hide();

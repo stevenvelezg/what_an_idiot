@@ -154,3 +154,30 @@ footer {
 	text-decoration:none;
 	color:#666;
 }
+
+#notice-modal {
+	display: block;
+	position: fixed;
+	z-index: 1;
+	margin: auto;
+	top: 20px;
+	left: 43%;
+	width: 20%;
+	height: 5%;
+	overflow: auto;
+	border: 2px solid darkcyan;
+	border-radius: 20px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	padding-bottom: 10px;
+	margin-top: 0;
+	background-color: lightcyan;
+	color: #666;
+}
+
+#closer {
+	position: absolute;
+	right: 10px;
+	font-size: 15px;
+}
