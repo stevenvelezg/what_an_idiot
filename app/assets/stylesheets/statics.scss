@@ -1,13 +1,15 @@
 // Place all the styles related to the Statics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.aboutus {
+h1.aboutus {
 	// font-size: 30px;
 	font-family: 'Oswald', sans-serif;
+	font-size: 45px;
 	padding-left: 40px;
+	color: gray;
 }
-.abouttext {
-	font-size: 15px;
+p.abouttext {
+	font-size: 18px;
 	font-family: 'Oswald', sans-serif;
 	padding-left: 40px;
 	margin-top: 1px;
