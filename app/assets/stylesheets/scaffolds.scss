@@ -116,6 +116,12 @@ label {
 
 .logo {
   width: 50px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+#last-logo {
+  margin-right: 0;
 }
 
 body form input[type=email], body form input[type=password], body form input[type=text], body form input[type=number], body form input[type=file] {
