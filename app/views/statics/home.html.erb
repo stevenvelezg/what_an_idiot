@@ -11,3 +11,28 @@
     </div>
   </div>
 <% end %>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span id="x-close" onclick="closeModal()">&times;</span><br />
+    <h3>Login!</h3>
+    <%= render "form" %>
+    <%= link_to "Sign up", '/sign_in' %><br />
+    <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+    <div class="logos">
+      <a href="https://www.facebook.com/SpaceJamMovie/"><img class="logo" src="/assets/facebook.png"></a>
+      <a href="https://twitter.com/life_alert?lang=en"><img class="logo" src="/assets/twitter.png"></a>
+      <a href="https://www.instagram.com/jamesfregan/"><img class="logo" src="/assets/instagram.png"></a>
+      <a href="https://www.reddit.com/r/shittyaskscience/"><img class="logo" src="/assets/reddit.png"></a>
+    </div>
+  </div>
+</div>
+
+<% if current_user %>
+<% else %>
+  <script type="text/javascript">
+  setTimeout(function() {
+    document.getElementById('myModal').style = "display: block;"
+  }, 5000);
+  </script>
+<% end %>
