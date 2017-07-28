@@ -12,7 +12,7 @@ Post.create([{title: 'Great Life Choices: Robbing a bank, stripping, and then th
   {title: "Always stop to pet a cat, even if you're running from the police!", article_link: "http://www.huffingtonpost.com/2014/09/03/thief-distracted-by-kittens-daniel-velapatino_n_5759012.html", body: "Cats will do anything to ruin your day. Last week, they ruined 21-year-old Daniel Pinedo Velapatino’s day. The suspect had just talked his way into a woman’s home in Boca Raton, Florida, after leading police on a wild chase from Delray Beach. He may have gotten away with it, too, if it weren’t for those meddling, cute, fuzzy wuzzy cats lying around."}])
 User.create([{email: 'test@email.com', password: '12345678'},
               {email: 'test2@email.com', password: '12345678'},
-              {email: 'steven.velez711@gmail.com', password: 'svelezg', admin: true}
+              {email: 'steven.velez711@gmail.com', password: 'svelezg', admin: true},
 			  {email: 'james@hello.com', password: '123456', admin: true}])
 Vote.create([{post_id: 1, user_id: 1, vote: 1},
               {post_id: 1, user_id: 1, vote: 0}])
