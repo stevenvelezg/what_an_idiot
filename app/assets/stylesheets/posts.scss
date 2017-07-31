@@ -14,7 +14,11 @@ h1.articles {
 }
 h2.articles.link {
   margin-bottom: 0;
-  font-size: 13px;
+  font-size: 28px;
+  font-variant: small-caps;
+  font-family: 'Oswald', sans-serif;
+  word-spacing: -2px;
+  line-height: 95%;
 }
 
 h4.artilce.body {
@@ -22,7 +26,8 @@ h4.artilce.body {
 }
 
 div.article {
-  width: 90%;
+  text-align: center;
+  width: 80%;
   border-bottom: 2px solid black;
   margin: auto;
   margin-top: 10px;
@@ -31,6 +36,7 @@ div.article {
 div.text {
   display: inline-block;
   width: 65%;
+  margin-right: 20px;
 }
 
 div.bar {
@@ -60,6 +66,10 @@ h1.new.post {
 div.new.form {
   text-align: center;
   padding-top: 40px;
+}
+#post_title {
+  width: 30%;
+
 }
 #post_body {
   width: 40%;
