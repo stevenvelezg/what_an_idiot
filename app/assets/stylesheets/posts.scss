@@ -6,19 +6,28 @@
 //   text-align: center;
 // }
 
-h1.post {
+h1.articles {
   color: black;
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 15px;
 }
-h2 {
+h2.articles.link {
   margin-bottom: 0;
+  font-size: 28px;
+  font-variant: small-caps;
+  font-family: 'Oswald', sans-serif;
+  word-spacing: -2px;
+  line-height: 95%;
 }
 
-h4{
+h4.artilce.body {
   margin-top: 0;
 }
 
 div.article {
-  width: 90%;
+  text-align: center;
+  width: 80%;
   border-bottom: 2px solid black;
   margin: auto;
   margin-top: 10px;
@@ -27,6 +36,7 @@ div.article {
 div.text {
   display: inline-block;
   width: 65%;
+  margin-right: 20px;
 }
 
 div.bar {
@@ -46,4 +56,30 @@ div.percent {
 }
 a.vote-change {
   padding-left: 0;
+}
+h1.new.post {
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 0;
+}
+div.new.form {
+  text-align: center;
+  padding-top: 40px;
+}
+#post_title {
+  width: 30%;
+
+}
+#post_body {
+  width: 40%;
+  height: 100px;
+}
+#post_article_link {
+  width: 40%;
+}
+.new.form label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
