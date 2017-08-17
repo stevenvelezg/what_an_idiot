@@ -1,27 +1,26 @@
-# README
+# What An Idiot!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Links: 
 
-Things you may want to cover:
+* [Github](https://github.com/stevenvelezg/what_an_idiot/)
+* Deployed Version (N/A)
 
-* Ruby version
+Technology Used: 
 
-* System dependencies
+* HTML
+* CSS
+* JavaScript
+* Ruby on Rails
+* Sass
+* Sqlite3
 
-* Configuration
+About the Project
 
-* Database creation
+Have you ever felt like you made a really stupid mistake and feel like a major idiot? Are you just bored and looking for some funny
+news articles? Then "What An Idiot!" is the site for you! We take news articles of people who make stupid decisions for your
+entertainment!
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-This is a website for entertainment purposes. We link headlines to clever titles that we created for the user to click and then read the actual article. 
-After reading, the user has the option to place a vote to determine how idiotic the the peron in the article is.
-Users must be signed in or make an account in order to vote.
+This site was built between James Lim and I just to have a little fun with our project. We looked around and started to notice all
+these serious apps that people were creating and felt that we should be the silly app to lighten the mood. The site itself is pretty
+simple, where we make blog posts of different news links we found to be funny because of someone's stupid decisions, allows for voting
+by the public, and gives a link to the article.
